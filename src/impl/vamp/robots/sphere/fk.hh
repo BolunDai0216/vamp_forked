@@ -14,8 +14,8 @@ namespace vamp::robots::sphere
 
     // Pad and align vectors for easy loading.
     alignas(FloatVectorAlignment) static std::array<float, FloatVectorWidth> lows{-10, -10, 0};
-    alignas(FloatVectorAlignment) static std::array<float, FloatVectorWidth> highs{10, 10, 5};
-    static float radius = 0.2;
+    alignas(FloatVectorAlignment) static std::array<float, FloatVectorWidth> highs{10, 10, 0.01};
+    static float radius = 0.5;
 
     inline void set_radius(float new_radius) noexcept
     {
